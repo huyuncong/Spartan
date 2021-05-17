@@ -1,0 +1,143 @@
+
+running 42 tests
+test dense_mlpoly::tests::check_factored_chis ... ignored
+test dense_mlpoly::tests::check_memoized_chis ... ignored
+test dense_mlpoly::tests::check_memoized_factored_chis ... ignored
+test dense_mlpoly::tests::check_polynomial_commit ... ignored
+test dense_mlpoly::tests::check_polynomial_evaluation ... ignored
+test nizk::tests::check_dotproductproof ... ignored
+test nizk::tests::check_dotproductproof_log ... ignored
+test nizk::tests::check_equalityproof ... ignored
+test nizk::tests::check_knowledgeproof ... ignored
+test nizk::tests::check_productproof ... ignored
+test r1csproof::tests::check_r1cs_proof ... ignored
+test r1csproof::tests::test_synthetic_r1cs ... ignored
+test r1csproof::tests::test_tiny_r1cs ... ignored
+test scalar::ristretto255::tests::test_addition ... ignored
+test scalar::ristretto255::tests::test_double ... ignored
+test scalar::ristretto255::tests::test_equality ... ignored
+test scalar::ristretto255::tests::test_from_bytes ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_maximum ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_negative_one ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_r2 ... ignored
+test scalar::ristretto255::tests::test_from_raw ... ignored
+test scalar::ristretto255::tests::test_from_u512_max ... ignored
+test scalar::ristretto255::tests::test_from_u512_r ... ignored
+test scalar::ristretto255::tests::test_from_u512_r2 ... ignored
+test scalar::ristretto255::tests::test_from_u512_zero ... ignored
+test scalar::ristretto255::tests::test_inv ... ignored
+test scalar::ristretto255::tests::test_inversion ... ignored
+test scalar::ristretto255::tests::test_invert_is_pow ... ignored
+test scalar::ristretto255::tests::test_multiplication ... ignored
+test scalar::ristretto255::tests::test_negation ... ignored
+test scalar::ristretto255::tests::test_squaring ... ignored
+test scalar::ristretto255::tests::test_subtraction ... ignored
+test scalar::ristretto255::tests::test_to_bytes ... ignored
+test scalar::ristretto255::tests::test_zero ... ignored
+test sparse_mlpoly::tests::check_sparse_polyeval_proof ... ignored
+test sumcheck::tests::check_sumcheck_prove_cubic ... ignored
+test tests::check_r1cs_invalid_index ... ignored
+test tests::check_r1cs_invalid_scalar ... ignored
+test tests::check_snark ... ignored
+test tests::test_padded_constraints ... ignored
+test unipoly::tests::test_from_evals_cubic ... ignored
+test unipoly::tests::test_from_evals_quad ... ignored
+
+test result: ok. 0 passed; 0 failed; 42 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+WARNING: HTML report generation will become a non-default optional feature in Criterion.rs 0.4.0.
+This feature is being moved to cargo-criterion (https://github.com/bheisler/cargo-criterion) and will be optional in a future version of Criterion.rs. To silence this warning, either switch to cargo-criterion or enable the 'html_reports' feature in your Cargo.toml.
+
+Gnuplot not found, using plotters backend
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_12
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_12: Warming up for 3.0000 s
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_12: Collecting 10 samples in estimated 5.0020 s (21k iterations)
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_12: Analyzing
+Sumcheck_prove_benchmark/NIZK_prove_12
+                        time:   [240.39 us 240.40 us 240.42 us]
+
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_13
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_13: Warming up for 3.0000 s
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_13: Collecting 10 samples in estimated 5.0059 s (19k iterations)
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_13: Analyzing
+Sumcheck_prove_benchmark/NIZK_prove_13
+                        time:   [260.53 us 260.54 us 260.54 us]
+
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_14
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_14: Warming up for 3.0000 s
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_14: Collecting 10 samples in estimated 5.0071 s (18k iterations)
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_14: Analyzing
+Sumcheck_prove_benchmark/NIZK_prove_14
+                        time:   [280.53 us 280.56 us 280.60 us]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_15
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_15: Warming up for 3.0000 s
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_15: Collecting 10 samples in estimated 5.0020 s (17k iterations)
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_15: Analyzing
+Sumcheck_prove_benchmark/NIZK_prove_15
+                        time:   [300.44 us 300.46 us 300.50 us]
+
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_16
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_16: Warming up for 3.0000 s
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_16: Collecting 10 samples in estimated 5.0095 s (16k iterations)
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_16: Analyzing
+Sumcheck_prove_benchmark/NIZK_prove_16
+                        time:   [320.54 us 320.58 us 320.62 us]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low mild
+  1 (10.00%) high mild
+
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_17
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_17: Warming up for 3.0000 s
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_17: Collecting 10 samples in estimated 5.0052 s (15k iterations)
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_17: Analyzing
+Sumcheck_prove_benchmark/NIZK_prove_17
+                        time:   [340.73 us 340.75 us 340.79 us]
+Found 3 outliers among 10 measurements (30.00%)
+  1 (10.00%) low mild
+  1 (10.00%) high mild
+  1 (10.00%) high severe
+
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_18
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_18: Warming up for 3.0000 s
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_18: Collecting 10 samples in estimated 5.0038 s (13k iterations)
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_18: Analyzing
+Sumcheck_prove_benchmark/NIZK_prove_18
+                        time:   [360.86 us 360.90 us 360.94 us]
+
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_19
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_19: Warming up for 3.0000 s
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_19: Collecting 10 samples in estimated 5.0140 s (12k iterations)
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_19: Analyzing
+Sumcheck_prove_benchmark/NIZK_prove_19
+                        time:   [380.86 us 380.91 us 381.00 us]
+
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_20
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_20: Warming up for 3.0000 s
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_20: Collecting 10 samples in estimated 5.0136 s (11k iterations)
+Benchmarking Sumcheck_prove_benchmark/NIZK_prove_20: Analyzing
+Sumcheck_prove_benchmark/NIZK_prove_20
+                        time:   [400.88 us 400.90 us 400.95 us]
+
