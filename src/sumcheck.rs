@@ -15,15 +15,18 @@ use merlin::Transcript;
 use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Debug)]
+///
 pub struct SumcheckInstanceProof {
   compressed_polys: Vec<CompressedUniPoly>,
 }
 
 impl SumcheckInstanceProof {
+  ///
   pub fn new(compressed_polys: Vec<CompressedUniPoly>) -> SumcheckInstanceProof {
     SumcheckInstanceProof { compressed_polys }
   }
 
+  ///
   pub fn verify(
     &self,
     claim: Scalar,
@@ -62,6 +65,7 @@ impl SumcheckInstanceProof {
 }
 
 #[derive(Serialize, Deserialize, Debug)]
+///
 pub struct ZKSumcheckInstanceProof {
   comm_polys: Vec<CompressedGroup>,
   comm_evals: Vec<CompressedGroup>,
@@ -69,6 +73,7 @@ pub struct ZKSumcheckInstanceProof {
 }
 
 impl ZKSumcheckInstanceProof {
+  ///
   pub fn new(
     comm_polys: Vec<CompressedGroup>,
     comm_evals: Vec<CompressedGroup>,
@@ -81,6 +86,7 @@ impl ZKSumcheckInstanceProof {
     }
   }
 
+  ///
   pub fn verify(
     &self,
     comm_claim: &CompressedGroup,
@@ -177,7 +183,9 @@ impl ZKSumcheckInstanceProof {
   }
 }
 
+///
 impl SumcheckInstanceProof {
+  ///
   pub fn prove_cubic<F>(
     claim: &Scalar,
     num_rounds: usize,
@@ -249,6 +257,7 @@ impl SumcheckInstanceProof {
     )
   }
 
+  ///
   pub fn prove_cubic_batched<F>(
     claim: &Scalar,
     num_rounds: usize,
@@ -422,7 +431,9 @@ impl SumcheckInstanceProof {
   }
 }
 
+///
 impl ZKSumcheckInstanceProof {
+  ///
   pub fn prove_quad<F>(
     claim: &Scalar,
     blind_claim: &Scalar,
@@ -583,6 +594,7 @@ impl ZKSumcheckInstanceProof {
     )
   }
 
+  ///
   pub fn prove_cubic_with_additive_term<F>(
     claim: &Scalar,
     blind_claim: &Scalar,

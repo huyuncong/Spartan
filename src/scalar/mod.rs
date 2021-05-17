@@ -1,9 +1,13 @@
 mod ristretto255;
 
+///
 pub type Scalar = ristretto255::Scalar;
+///
 pub type ScalarBytes = curve25519_dalek::scalar::Scalar;
 
+///
 pub trait ScalarFromPrimitives {
+  ///
   fn to_scalar(self) -> Scalar;
 }
 
@@ -25,8 +29,11 @@ impl ScalarFromPrimitives for bool {
   }
 }
 
+///
 pub trait ScalarBytesFromScalar {
+  ///
   fn decompress_scalar(s: &Scalar) -> ScalarBytes;
+  ///
   fn decompress_vector(s: &[Scalar]) -> Vec<ScalarBytes>;
 }
 

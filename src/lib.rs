@@ -17,7 +17,8 @@ extern crate test;
 extern crate rayon;
 
 mod commitments;
-mod dense_mlpoly;
+///
+pub mod dense_mlpoly;
 mod errors;
 mod group;
 mod math;
@@ -26,9 +27,11 @@ mod product_tree;
 mod r1csinstance;
 mod r1csproof;
 mod random;
-mod scalar;
+///
+pub mod scalar;
 mod sparse_mlpoly;
-mod sumcheck;
+///
+pub mod sumcheck;
 mod timer;
 mod transcript;
 mod unipoly;

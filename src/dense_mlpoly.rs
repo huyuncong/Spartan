@@ -15,18 +15,22 @@ use serde::{Deserialize, Serialize};
 use rayon::prelude::*;
 
 #[derive(Debug)]
+///
 pub struct DensePolynomial {
   num_vars: usize, // the number of variables in the multilinear polynomial
   len: usize,
   Z: Vec<Scalar>, // evaluations of the polynomial in all the 2^num_vars Boolean inputs
 }
 
+///
 pub struct PolyCommitmentGens {
+  ///
   pub gens: DotProductProofGens,
 }
 
 impl PolyCommitmentGens {
   // the number of variables in the multilinear polynomial
+  ///
   pub fn new(num_vars: usize, label: &'static [u8]) -> PolyCommitmentGens {
     let (_left, right) = EqPolynomial::compute_factored_lens(num_vars);
     let gens = DotProductProofGens::new(right.pow2(), label);
@@ -34,29 +38,36 @@ impl PolyCommitmentGens {
   }
 }
 
+///
 pub struct PolyCommitmentBlinds {
   blinds: Vec<Scalar>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+///
 pub struct PolyCommitment {
   C: Vec<CompressedGroup>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+///
 pub struct ConstPolyCommitment {
   C: CompressedGroup,
 }
 
+///
 pub struct EqPolynomial {
   r: Vec<Scalar>,
 }
 
+///
 impl EqPolynomial {
+  ///
   pub fn new(r: Vec<Scalar>) -> Self {
     EqPolynomial { r }
   }
 
+  ///
   pub fn evaluate(&self, rx: &[Scalar]) -> Scalar {
     assert_eq!(self.r.len(), rx.len());
     (0..rx.len())
@@ -64,6 +75,7 @@ impl EqPolynomial {
       .product()
   }
 
+  ///
   pub fn evals(&self) -> Vec<Scalar> {
     let ell = self.r.len();
 
@@ -82,10 +94,12 @@ impl EqPolynomial {
     evals
   }
 
+  ///
   pub fn compute_factored_lens(ell: usize) -> (usize, usize) {
     (ell / 2, ell - ell / 2)
   }
 
+  ///
   pub fn compute_factored_evals(&self) -> (Vec<Scalar>, Vec<Scalar>) {
     let ell = self.r.len();
     let (left_num_vars, _right_num_vars) = EqPolynomial::compute_factored_lens(ell);
@@ -97,15 +111,19 @@ impl EqPolynomial {
   }
 }
 
+///
 pub struct IdentityPolynomial {
   size_point: usize,
 }
 
+///
 impl IdentityPolynomial {
+  ///
   pub fn new(size_point: usize) -> Self {
     IdentityPolynomial { size_point }
   }
 
+  ///
   pub fn evaluate(&self, r: &[Scalar]) -> Scalar {
     let len = r.len();
     assert_eq!(len, self.size_point);
@@ -115,25 +133,31 @@ impl IdentityPolynomial {
   }
 }
 
+///
 impl DensePolynomial {
+  ///
   pub fn new(Z: Vec<Scalar>) -> Self {
     let len = Z.len();
     let num_vars = len.log2();
     DensePolynomial { num_vars, Z, len }
   }
 
+  ///
   pub fn get_num_vars(&self) -> usize {
     self.num_vars
   }
 
+  ///
   pub fn len(&self) -> usize {
     self.len
   }
 
+  ///
   pub fn clone(&self) -> DensePolynomial {
     DensePolynomial::new(self.Z[0..self.len].to_vec())
   }
 
+  ///
   pub fn split(&self, idx: usize) -> (DensePolynomial, DensePolynomial) {
     assert!(idx < self.len());
     (
@@ -173,6 +197,7 @@ impl DensePolynomial {
     PolyCommitment { C }
   }
 
+  ///
   pub fn commit(
     &self,
     gens: &PolyCommitmentGens,
@@ -200,6 +225,7 @@ impl DensePolynomial {
     (self.commit_inner(&blinds.blinds, &gens.gens.gens_n), blinds)
   }
 
+  ///
   pub fn bound(&self, L: &[Scalar]) -> Vec<Scalar> {
     let (left_num_vars, right_num_vars) = EqPolynomial::compute_factored_lens(self.get_num_vars());
     let L_size = left_num_vars.pow2();
@@ -209,6 +235,7 @@ impl DensePolynomial {
       .collect()
   }
 
+  ///
   pub fn bound_poly_var_top(&mut self, r: &Scalar) {
     let n = self.len() / 2;
     for i in 0..n {
@@ -218,6 +245,7 @@ impl DensePolynomial {
     self.len = n;
   }
 
+  ///
   pub fn bound_poly_var_bot(&mut self, r: &Scalar) {
     let n = self.len() / 2;
     for i in 0..n {
@@ -228,6 +256,7 @@ impl DensePolynomial {
   }
 
   // returns Z(r) in O(n) time
+  ///
   pub fn evaluate(&self, r: &[Scalar]) -> Scalar {
     // r must have a value for each variable
     assert_eq!(r.len(), self.get_num_vars());
@@ -240,6 +269,7 @@ impl DensePolynomial {
     &self.Z
   }
 
+  ///
   pub fn extend(&mut self, other: &DensePolynomial) {
     // TODO: allow extension even when some vars are bound
     assert_eq!(self.Z.len(), self.len);
@@ -251,6 +281,7 @@ impl DensePolynomial {
     assert_eq!(self.Z.len(), self.len);
   }
 
+  ///
   pub fn merge<'a, I>(polys: I) -> DensePolynomial
   where
     I: IntoIterator<Item = &'a DensePolynomial>,
@@ -266,6 +297,7 @@ impl DensePolynomial {
     DensePolynomial::new(Z)
   }
 
+  ///
   pub fn from_usize(Z: &[usize]) -> Self {
     DensePolynomial::new(
       (0..Z.len())
@@ -295,6 +327,7 @@ impl AppendToTranscript for PolyCommitment {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+///
 pub struct PolyEvalProof {
   proof: DotProductProofLog,
 }
@@ -304,6 +337,7 @@ impl PolyEvalProof {
     b"polynomial evaluation proof"
   }
 
+  ///
   pub fn prove(
     poly: &DensePolynomial,
     blinds_opt: Option<&PolyCommitmentBlinds>,
@@ -359,6 +393,7 @@ impl PolyEvalProof {
     (PolyEvalProof { proof }, C_Zr_prime)
   }
 
+  ///
   pub fn verify(
     &self,
     gens: &PolyCommitmentGens,
@@ -383,6 +418,7 @@ impl PolyEvalProof {
       .verify(R.len(), &gens.gens, transcript, &R, &C_LZ, C_Zr)
   }
 
+  ///
   pub fn verify_plain(
     &self,
     gens: &PolyCommitmentGens,

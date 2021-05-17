@@ -51,6 +51,10 @@ harness = false
 name = "nizk"
 harness = false
 
+[[bench]]
+name = "sumcheck"
+harness = false
+
 [features]
 multicore = ["rayon"]
 profile = []
