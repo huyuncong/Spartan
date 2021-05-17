@@ -773,3 +773,57 @@ impl ZKSumcheckInstanceProof {
     )
   }
 }
+
+#[cfg(test)]
+mod tests {
+  use super::*;
+  use rand::rngs::OsRng;
+  use rand::RngCore;
+  #[test]
+  fn check_sumcheck_prove_cubic() {
+    let mut csprng: OsRng = OsRng;
+
+    let num_size: usize = 256;
+    let num_rounds = 8;
+    let mut A = Vec::with_capacity(num_size);
+    let mut B = Vec::with_capacity(num_size);
+    let mut C = Vec::with_capacity(num_size);
+
+    let mut claim = Scalar::zero();
+    for _ in 0..num_size {
+      let tmpA = Scalar::random(&mut csprng);
+      A.push(tmpA);
+      let tmpB = Scalar::random(&mut csprng);
+      B.push(tmpB);
+      let tmpC = Scalar::random(&mut csprng);
+      C.push(tmpC);
+      claim += tmpA * tmpB * tmpC;
+    }
+
+    let mut poly_A = DensePolynomial::new(A);
+    let mut poly_B = DensePolynomial::new(B);
+    let mut poly_C = DensePolynomial::new(C);
+
+    let comb_func_prod = |poly_A_comp: &Scalar,
+                          poly_B_comp: &Scalar,
+                          poly_C_comp: &Scalar|
+     -> Scalar { poly_A_comp * poly_B_comp * poly_C_comp };
+
+    let mut transcript = Transcript::new(b"test");
+
+    let (proof_prod, rand_prod, claims_prod) = SumcheckInstanceProof::prove_cubic(
+      &claim,
+      num_rounds,
+      &mut poly_A,
+      &mut poly_B,
+      &mut poly_C,
+      comb_func_prod,
+      &mut transcript,
+    );
+
+    let mut verifier_transcript = Transcript::new(b"test");
+    assert!(proof_prod
+      .verify(claim, num_rounds, 3, &mut verifier_transcript,)
+      .is_ok());
+  }
+}
