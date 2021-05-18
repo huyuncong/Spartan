@@ -1,0 +1,199 @@
+
+running 42 tests
+test dense_mlpoly::tests::check_factored_chis ... ignored
+test dense_mlpoly::tests::check_memoized_chis ... ignored
+test dense_mlpoly::tests::check_memoized_factored_chis ... ignored
+test dense_mlpoly::tests::check_polynomial_commit ... ignored
+test dense_mlpoly::tests::check_polynomial_evaluation ... ignored
+test nizk::tests::check_dotproductproof ... ignored
+test nizk::tests::check_dotproductproof_log ... ignored
+test nizk::tests::check_equalityproof ... ignored
+test nizk::tests::check_knowledgeproof ... ignored
+test nizk::tests::check_productproof ... ignored
+test r1csproof::tests::check_r1cs_proof ... ignored
+test r1csproof::tests::test_synthetic_r1cs ... ignored
+test r1csproof::tests::test_tiny_r1cs ... ignored
+test scalar::ristretto255::tests::test_addition ... ignored
+test scalar::ristretto255::tests::test_double ... ignored
+test scalar::ristretto255::tests::test_equality ... ignored
+test scalar::ristretto255::tests::test_from_bytes ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_maximum ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_negative_one ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_r2 ... ignored
+test scalar::ristretto255::tests::test_from_raw ... ignored
+test scalar::ristretto255::tests::test_from_u512_max ... ignored
+test scalar::ristretto255::tests::test_from_u512_r ... ignored
+test scalar::ristretto255::tests::test_from_u512_r2 ... ignored
+test scalar::ristretto255::tests::test_from_u512_zero ... ignored
+test scalar::ristretto255::tests::test_inv ... ignored
+test scalar::ristretto255::tests::test_inversion ... ignored
+test scalar::ristretto255::tests::test_invert_is_pow ... ignored
+test scalar::ristretto255::tests::test_multiplication ... ignored
+test scalar::ristretto255::tests::test_negation ... ignored
+test scalar::ristretto255::tests::test_squaring ... ignored
+test scalar::ristretto255::tests::test_subtraction ... ignored
+test scalar::ristretto255::tests::test_to_bytes ... ignored
+test scalar::ristretto255::tests::test_zero ... ignored
+test sparse_mlpoly::tests::check_sparse_polyeval_proof ... ignored
+test sumcheck::tests::check_sumcheck_prove_cubic ... ignored
+test tests::check_r1cs_invalid_index ... ignored
+test tests::check_r1cs_invalid_scalar ... ignored
+test tests::check_snark ... ignored
+test tests::test_padded_constraints ... ignored
+test unipoly::tests::test_from_evals_cubic ... ignored
+test unipoly::tests::test_from_evals_quad ... ignored
+
+test result: ok. 0 passed; 0 failed; 42 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+WARNING: HTML report generation will become a non-default optional feature in Criterion.rs 0.4.0.
+This feature is being moved to cargo-criterion (https://github.com/bheisler/cargo-criterion) and will be optional in a future version of Criterion.rs. To silence this warning, either switch to cargo-criterion or enable the 'html_reports' feature in your Cargo.toml.
+
+Gnuplot not found, using plotters backend
+Benchmarking NIZK_prove_benchmark/NIZK_prove_4096
+Benchmarking NIZK_prove_benchmark/NIZK_prove_4096: Warming up for 3.0000 s
+Benchmarking NIZK_prove_benchmark/NIZK_prove_4096: Collecting 10 samples in estimated 6.1048 s (110 iterations)
+Benchmarking NIZK_prove_benchmark/NIZK_prove_4096: Analyzing
+NIZK_prove_benchmark/NIZK_prove_4096
+                        time:   [55.448 ms 55.515 ms 55.581 ms]
+                        change: [-0.3903% -0.2566% -0.1249%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+Benchmarking NIZK_prove_benchmark/NIZK_prove_8192
+Benchmarking NIZK_prove_benchmark/NIZK_prove_8192: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 5.1s or enable flat sampling.
+Benchmarking NIZK_prove_benchmark/NIZK_prove_8192: Collecting 10 samples in estimated 5.0941 s (55 iterations)
+Benchmarking NIZK_prove_benchmark/NIZK_prove_8192: Analyzing
+NIZK_prove_benchmark/NIZK_prove_8192
+                        time:   [92.467 ms 92.604 ms 92.744 ms]
+                        change: [-0.3173% +0.0131% +0.3010%] (p = 0.94 > 0.05)
+                        No change in performance detected.
+
+Benchmarking NIZK_prove_benchmark/NIZK_prove_16384
+Benchmarking NIZK_prove_benchmark/NIZK_prove_16384: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 9.0s or enable flat sampling.
+Benchmarking NIZK_prove_benchmark/NIZK_prove_16384: Collecting 10 samples in estimated 9.0401 s (55 iterations)
+Benchmarking NIZK_prove_benchmark/NIZK_prove_16384: Analyzing
+NIZK_prove_benchmark/NIZK_prove_16384
+                        time:   [164.14 ms 164.29 ms 164.44 ms]
+                        change: [+0.1271% +0.2476% +0.3601%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+Benchmarking NIZK_prove_benchmark/NIZK_prove_32768
+Benchmarking NIZK_prove_benchmark/NIZK_prove_32768: Warming up for 3.0000 s
+Benchmarking NIZK_prove_benchmark/NIZK_prove_32768: Collecting 10 samples in estimated 5.5138 s (20 iterations)
+Benchmarking NIZK_prove_benchmark/NIZK_prove_32768: Analyzing
+NIZK_prove_benchmark/NIZK_prove_32768
+                        time:   [275.47 ms 275.89 ms 276.27 ms]
+                        change: [+0.6759% +0.8782% +1.0559%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+Benchmarking NIZK_prove_benchmark/NIZK_prove_65536
+Benchmarking NIZK_prove_benchmark/NIZK_prove_65536: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 5.2s.
+Benchmarking NIZK_prove_benchmark/NIZK_prove_65536: Collecting 10 samples in estimated 5.2296 s (10 iterations)
+Benchmarking NIZK_prove_benchmark/NIZK_prove_65536: Analyzing
+NIZK_prove_benchmark/NIZK_prove_65536
+                        time:   [525.80 ms 526.18 ms 526.57 ms]
+                        change: [+1.2024% +1.2942% +1.3910%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+
+Benchmarking NIZK_prove_benchmark/NIZK_prove_131072
+Benchmarking NIZK_prove_benchmark/NIZK_prove_131072: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 9.1s.
+Benchmarking NIZK_prove_benchmark/NIZK_prove_131072: Collecting 10 samples in estimated 9.1097 s (10 iterations)
+Benchmarking NIZK_prove_benchmark/NIZK_prove_131072: Analyzing
+NIZK_prove_benchmark/NIZK_prove_131072
+                        time:   [910.17 ms 910.79 ms 911.44 ms]
+                        change: [+0.4475% +0.5388% +0.6366%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+Benchmarking NIZK_prove_benchmark/NIZK_prove_262144
+Benchmarking NIZK_prove_benchmark/NIZK_prove_262144: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 17.8s.
+Benchmarking NIZK_prove_benchmark/NIZK_prove_262144: Collecting 10 samples in estimated 17.761 s (10 iterations)
+Benchmarking NIZK_prove_benchmark/NIZK_prove_262144: Analyzing
+NIZK_prove_benchmark/NIZK_prove_262144
+                        time:   [1.7776 s 1.7779 s 1.7783 s]
+                        change: [+0.7118% +0.7419% +0.7740%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+Benchmarking NIZK_prove_benchmark/NIZK_prove_524288
+Benchmarking NIZK_prove_benchmark/NIZK_prove_524288: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 32.1s.
+Benchmarking NIZK_prove_benchmark/NIZK_prove_524288: Collecting 10 samples in estimated 32.083 s (10 iterations)
+Benchmarking NIZK_prove_benchmark/NIZK_prove_524288: Analyzing
+NIZK_prove_benchmark/NIZK_prove_524288
+                        time:   [3.1994 s 3.2002 s 3.2010 s]
+                        change: [+0.4455% +0.4898% +0.5309%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking NIZK_prove_benchmark/NIZK_prove_1048576
+Benchmarking NIZK_prove_benchmark/NIZK_prove_1048576: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 63.8s.
+Benchmarking NIZK_prove_benchmark/NIZK_prove_1048576: Collecting 10 samples in estimated 63.832 s (10 iterations)
+Benchmarking NIZK_prove_benchmark/NIZK_prove_1048576: Analyzing
+NIZK_prove_benchmark/NIZK_prove_1048576
+                        time:   [6.3680 s 6.3738 s 6.3799 s]
+                        change: [-0.0868% +0.0091% +0.1160%] (p = 0.88 > 0.05)
+                        No change in performance detected.
+
+Benchmarking NIZK_verify_benchmark/NIZK_verify_1024
+Benchmarking NIZK_verify_benchmark/NIZK_verify_1024: Warming up for 3.0000 s
+Benchmarking NIZK_verify_benchmark/NIZK_verify_1024: Collecting 10 samples in estimated 5.0517 s (660 iterations)
+Benchmarking NIZK_verify_benchmark/NIZK_verify_1024: Analyzing
+NIZK_verify_benchmark/NIZK_verify_1024
+                        time:   [7.6505 ms 7.6540 ms 7.6571 ms]
+                        change: [+0.0323% +0.1071% +0.1880%] (p = 0.02 < 0.05)
+                        Change within noise threshold.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking NIZK_verify_benchmark/NIZK_verify_4096
+Benchmarking NIZK_verify_benchmark/NIZK_verify_4096: Warming up for 3.0000 s
+Benchmarking NIZK_verify_benchmark/NIZK_verify_4096: Collecting 10 samples in estimated 5.0900 s (495 iterations)
+Benchmarking NIZK_verify_benchmark/NIZK_verify_4096: Analyzing
+NIZK_verify_benchmark/NIZK_verify_4096
+                        time:   [10.266 ms 10.275 ms 10.285 ms]
+                        change: [-0.0231% +0.0799% +0.1942%] (p = 0.20 > 0.05)
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking NIZK_verify_benchmark/NIZK_verify_65536
+Benchmarking NIZK_verify_benchmark/NIZK_verify_65536: Warming up for 3.0000 s
+Benchmarking NIZK_verify_benchmark/NIZK_verify_65536: Collecting 10 samples in estimated 5.4779 s (165 iterations)
+Benchmarking NIZK_verify_benchmark/NIZK_verify_65536: Analyzing
+NIZK_verify_benchmark/NIZK_verify_65536
+                        time:   [33.185 ms 33.204 ms 33.224 ms]
+                        change: [-0.4497% -0.3548% -0.2570%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
