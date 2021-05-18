@@ -58,9 +58,9 @@ fn sumcheck_prove_benchmark(c: &mut Criterion) {
         SumcheckInstanceProof::prove_cubic(
           &claim,
           num_rounds,
-          &mut poly_A,
-          &mut poly_B,
-          &mut poly_C,
+          &mut poly_A.clone(),
+          &mut poly_B.clone(),
+          &mut poly_C.clone(),
           comb_func_prod,
           &mut prover_transcript,
         );
