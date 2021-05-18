@@ -47,13 +47,13 @@ path = "profiler/nizk.rs"
 # name = "snark"
 # harness = false
 
-# [[bench]]
-# name = "nizk"
-# harness = false
-
 [[bench]]
-name = "sumcheck"
+name = "nizk"
 harness = false
+
+# [[bench]]
+# name = "sumcheck"
+# harness = false
 
 [features]
 multicore = ["rayon"]
