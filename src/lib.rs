@@ -26,7 +26,8 @@ mod nizk;
 mod product_tree;
 mod r1csinstance;
 mod r1csproof;
-mod random;
+///
+pub mod random;
 ///
 pub mod scalar;
 mod sparse_mlpoly;
