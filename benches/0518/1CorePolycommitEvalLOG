@@ -1,0 +1,154 @@
+
+running 42 tests
+test dense_mlpoly::tests::check_factored_chis ... ignored
+test dense_mlpoly::tests::check_memoized_chis ... ignored
+test dense_mlpoly::tests::check_memoized_factored_chis ... ignored
+test dense_mlpoly::tests::check_polynomial_commit ... ignored
+test dense_mlpoly::tests::check_polynomial_evaluation ... ignored
+test nizk::tests::check_dotproductproof ... ignored
+test nizk::tests::check_dotproductproof_log ... ignored
+test nizk::tests::check_equalityproof ... ignored
+test nizk::tests::check_knowledgeproof ... ignored
+test nizk::tests::check_productproof ... ignored
+test r1csproof::tests::check_r1cs_proof ... ignored
+test r1csproof::tests::test_synthetic_r1cs ... ignored
+test r1csproof::tests::test_tiny_r1cs ... ignored
+test scalar::ristretto255::tests::test_addition ... ignored
+test scalar::ristretto255::tests::test_double ... ignored
+test scalar::ristretto255::tests::test_equality ... ignored
+test scalar::ristretto255::tests::test_from_bytes ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_maximum ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_negative_one ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_r2 ... ignored
+test scalar::ristretto255::tests::test_from_raw ... ignored
+test scalar::ristretto255::tests::test_from_u512_max ... ignored
+test scalar::ristretto255::tests::test_from_u512_r ... ignored
+test scalar::ristretto255::tests::test_from_u512_r2 ... ignored
+test scalar::ristretto255::tests::test_from_u512_zero ... ignored
+test scalar::ristretto255::tests::test_inv ... ignored
+test scalar::ristretto255::tests::test_inversion ... ignored
+test scalar::ristretto255::tests::test_invert_is_pow ... ignored
+test scalar::ristretto255::tests::test_multiplication ... ignored
+test scalar::ristretto255::tests::test_negation ... ignored
+test scalar::ristretto255::tests::test_squaring ... ignored
+test scalar::ristretto255::tests::test_subtraction ... ignored
+test scalar::ristretto255::tests::test_to_bytes ... ignored
+test scalar::ristretto255::tests::test_zero ... ignored
+test sparse_mlpoly::tests::check_sparse_polyeval_proof ... ignored
+test sumcheck::tests::check_sumcheck_prove_cubic ... ignored
+test tests::check_r1cs_invalid_index ... ignored
+test tests::check_r1cs_invalid_scalar ... ignored
+test tests::check_snark ... ignored
+test tests::test_padded_constraints ... ignored
+test unipoly::tests::test_from_evals_cubic ... ignored
+test unipoly::tests::test_from_evals_quad ... ignored
+
+test result: ok. 0 passed; 0 failed; 42 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+WARNING: HTML report generation will become a non-default optional feature in Criterion.rs 0.4.0.
+This feature is being moved to cargo-criterion (https://github.com/bheisler/cargo-criterion) and will be optional in a future version of Criterion.rs. To silence this warning, either switch to cargo-criterion or enable the 'html_reports' feature in your Cargo.toml.
+
+Gnuplot not found, using plotters backend
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_12
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_12: Warming up for 3.0000 s
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_12: Collecting 10 samples in estimated 6.0995 s (165 iterations)
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_12: Analyzing
+Sumcheck_prove_benchmark/Poly_commit_12
+                        time:   [36.925 ms 36.950 ms 36.970 ms]
+                        change: [+14.946% +15.085% +15.192%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low mild
+  1 (10.00%) high mild
+
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_13
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_13: Warming up for 3.0000 s
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_13: Collecting 10 samples in estimated 7.3370 s (110 iterations)
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_13: Analyzing
+Sumcheck_prove_benchmark/Poly_commit_13
+                        time:   [66.653 ms 66.696 ms 66.742 ms]
+
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_14
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_14: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 6.9s or enable flat sampling.
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_14: Collecting 10 samples in estimated 6.9389 s (55 iterations)
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_14: Analyzing
+Sumcheck_prove_benchmark/Poly_commit_14
+                        time:   [126.04 ms 126.08 ms 126.16 ms]
+
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_15
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_15: Warming up for 3.0000 s
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_15: Collecting 10 samples in estimated 6.3030 s (30 iterations)
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_15: Analyzing
+Sumcheck_prove_benchmark/Poly_commit_15
+                        time:   [210.02 ms 210.06 ms 210.09 ms]
+
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_16
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_16: Warming up for 3.0000 s
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_16: Collecting 10 samples in estimated 8.2956 s (20 iterations)
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_16: Analyzing
+Sumcheck_prove_benchmark/Poly_commit_16
+                        time:   [408.45 ms 411.17 ms 413.88 ms]
+
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_17
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_17: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 7.0s.
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_17: Collecting 10 samples in estimated 7.0174 s (10 iterations)
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_17: Analyzing
+Sumcheck_prove_benchmark/Poly_commit_17
+                        time:   [701.09 ms 701.60 ms 702.13 ms]
+
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_18
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_18: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 14.0s.
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_18: Collecting 10 samples in estimated 13.963 s (10 iterations)
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_18: Analyzing
+Sumcheck_prove_benchmark/Poly_commit_18
+                        time:   [1.3925 s 1.3941 s 1.3956 s]
+
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_19
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_19: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 24.4s.
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_19: Collecting 10 samples in estimated 24.359 s (10 iterations)
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_19: Analyzing
+Sumcheck_prove_benchmark/Poly_commit_19
+                        time:   [2.4357 s 2.4363 s 2.4371 s]
+
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_20
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_20: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 48.4s.
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_20: Collecting 10 samples in estimated 48.433 s (10 iterations)
+Benchmarking Sumcheck_prove_benchmark/Poly_commit_20: Analyzing
+Sumcheck_prove_benchmark/Poly_commit_20
+                        time:   [4.8790 s 4.9284 s 4.9769 s]
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
