@@ -27,18 +27,18 @@ fn poly_commit_helper(
   transcript: &mut Transcript,
 ) {
   let (comm_vars, blinds_vars) = poly.commit(&gens_pc, Some(random_tape));
-  let eval_vars_at_ry = poly.evaluate(&r);
-  let blind_eval = random_tape.random_scalar(b"blind_eval");
-  let (proof_eval_vars_at_ry, comm_vars_at_ry) = PolyEvalProof::prove(
-    &poly,
-    Some(&blinds_vars),
-    &r,
-    &eval_vars_at_ry,
-    Some(&blind_eval),
-    &gens_pc,
-    transcript,
-    random_tape,
-  );
+//  let eval_vars_at_ry = poly.evaluate(&r);
+//  let blind_eval = random_tape.random_scalar(b"blind_eval");
+//  let (proof_eval_vars_at_ry, comm_vars_at_ry) = PolyEvalProof::prove(
+//    &poly,
+//    Some(&blinds_vars),
+//    &r,
+//    &eval_vars_at_ry,
+//    Some(&blind_eval),
+//    &gens_pc,
+//    transcript,
+//    random_tape,
+//  );
 }
 
 fn poly_commit_benchmark(c: &mut Criterion) {
