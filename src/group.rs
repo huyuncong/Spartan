@@ -3,11 +3,15 @@ use super::scalar::{Scalar, ScalarBytes, ScalarBytesFromScalar};
 use core::borrow::Borrow;
 use core::ops::{Mul, MulAssign};
 
+///
 pub type GroupElement = curve25519_dalek::ristretto::RistrettoPoint;
+///
 pub type CompressedGroup = curve25519_dalek::ristretto::CompressedRistretto;
-
+///
 pub trait CompressedGroupExt {
+  ///
   type Group;
+  ///
   fn unpack(&self) -> Result<Self::Group, ProofVerifyError>;
 }
 
@@ -20,6 +24,7 @@ impl CompressedGroupExt for CompressedGroup {
   }
 }
 
+///
 pub const GROUP_BASEPOINT_COMPRESSED: CompressedGroup =
   curve25519_dalek::constants::RISTRETTO_BASEPOINT_COMPRESSED;
 
@@ -84,8 +89,11 @@ define_mul_assign_variants!(LHS = GroupElement, RHS = Scalar);
 define_mul_variants!(LHS = GroupElement, RHS = Scalar, Output = GroupElement);
 define_mul_variants!(LHS = Scalar, RHS = GroupElement, Output = GroupElement);
 
+///
 pub trait VartimeMultiscalarMul {
+  ///
   type Scalar;
+  ///
   fn vartime_multiscalar_mul<I, J>(scalars: I, points: J) -> Self
   where
     I: IntoIterator,

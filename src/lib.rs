@@ -20,7 +20,8 @@ mod commitments;
 ///
 pub mod dense_mlpoly;
 mod errors;
-mod group;
+///
+pub mod group;
 mod math;
 mod nizk;
 mod product_tree;
