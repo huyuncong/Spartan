@@ -55,13 +55,13 @@ path = "profiler/nizk.rs"
 # name = "sumcheck"
 # harness = false
 
-# [[bench]]
-# name = "polycommit"
-# harness = false
-
 [[bench]]
-name = "crypto"
+name = "polycommit"
 harness = false
+
+# [[bench]]
+# name = "crypto"
+# harness = false
 
 [features]
 multicore = ["rayon"]
