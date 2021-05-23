@@ -1,0 +1,179 @@
+
+running 42 tests
+test dense_mlpoly::tests::check_factored_chis ... ignored
+test dense_mlpoly::tests::check_memoized_chis ... ignored
+test dense_mlpoly::tests::check_memoized_factored_chis ... ignored
+test dense_mlpoly::tests::check_polynomial_commit ... ignored
+test dense_mlpoly::tests::check_polynomial_evaluation ... ignored
+test nizk::tests::check_dotproductproof ... ignored
+test nizk::tests::check_dotproductproof_log ... ignored
+test nizk::tests::check_equalityproof ... ignored
+test nizk::tests::check_knowledgeproof ... ignored
+test nizk::tests::check_productproof ... ignored
+test r1csproof::tests::check_r1cs_proof ... ignored
+test r1csproof::tests::test_synthetic_r1cs ... ignored
+test r1csproof::tests::test_tiny_r1cs ... ignored
+test scalar::ristretto255::tests::test_addition ... ignored
+test scalar::ristretto255::tests::test_double ... ignored
+test scalar::ristretto255::tests::test_equality ... ignored
+test scalar::ristretto255::tests::test_from_bytes ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_maximum ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_negative_one ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_r2 ... ignored
+test scalar::ristretto255::tests::test_from_raw ... ignored
+test scalar::ristretto255::tests::test_from_u512_max ... ignored
+test scalar::ristretto255::tests::test_from_u512_r ... ignored
+test scalar::ristretto255::tests::test_from_u512_r2 ... ignored
+test scalar::ristretto255::tests::test_from_u512_zero ... ignored
+test scalar::ristretto255::tests::test_inv ... ignored
+test scalar::ristretto255::tests::test_inversion ... ignored
+test scalar::ristretto255::tests::test_invert_is_pow ... ignored
+test scalar::ristretto255::tests::test_multiplication ... ignored
+test scalar::ristretto255::tests::test_negation ... ignored
+test scalar::ristretto255::tests::test_squaring ... ignored
+test scalar::ristretto255::tests::test_subtraction ... ignored
+test scalar::ristretto255::tests::test_to_bytes ... ignored
+test scalar::ristretto255::tests::test_zero ... ignored
+test sparse_mlpoly::tests::check_sparse_polyeval_proof ... ignored
+test sumcheck::tests::check_sumcheck_prove_cubic ... ignored
+test tests::check_r1cs_invalid_index ... ignored
+test tests::check_r1cs_invalid_scalar ... ignored
+test tests::check_snark ... ignored
+test tests::test_padded_constraints ... ignored
+test unipoly::tests::test_from_evals_cubic ... ignored
+test unipoly::tests::test_from_evals_quad ... ignored
+
+test result: ok. 0 passed; 0 failed; 42 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+WARNING: HTML report generation will become a non-default optional feature in Criterion.rs 0.4.0.
+This feature is being moved to cargo-criterion (https://github.com/bheisler/cargo-criterion) and will be optional in a future version of Criterion.rs. To silence this warning, either switch to cargo-criterion or enable the 'html_reports' feature in your Cargo.toml.
+
+Gnuplot not found, using plotters backend
+Benchmarking NIZK_verify_benchmark/NIZK_verify_4096
+Benchmarking NIZK_verify_benchmark/NIZK_verify_4096: Warming up for 3.0000 s
+Benchmarking NIZK_verify_benchmark/NIZK_verify_4096: Collecting 10 samples in estimated 5.0776 s (495 iterations)
+Benchmarking NIZK_verify_benchmark/NIZK_verify_4096: Analyzing
+NIZK_verify_benchmark/NIZK_verify_4096
+                        time:   [10.252 ms 10.254 ms 10.256 ms]
+                        change: [-0.1968% -0.1450% -0.0966%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+Benchmarking NIZK_verify_benchmark/NIZK_verify_8192
+Benchmarking NIZK_verify_benchmark/NIZK_verify_8192: Warming up for 3.0000 s
+Benchmarking NIZK_verify_benchmark/NIZK_verify_8192: Collecting 10 samples in estimated 5.4636 s (440 iterations)
+Benchmarking NIZK_verify_benchmark/NIZK_verify_8192: Analyzing
+NIZK_verify_benchmark/NIZK_verify_8192
+                        time:   [12.418 ms 12.423 ms 12.431 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+Benchmarking NIZK_verify_benchmark/NIZK_verify_16384
+Benchmarking NIZK_verify_benchmark/NIZK_verify_16384: Warming up for 3.0000 s
+Benchmarking NIZK_verify_benchmark/NIZK_verify_16384: Collecting 10 samples in estimated 5.2903 s (330 iterations)
+Benchmarking NIZK_verify_benchmark/NIZK_verify_16384: Analyzing
+NIZK_verify_benchmark/NIZK_verify_16384
+                        time:   [16.023 ms 16.026 ms 16.028 ms]
+
+Benchmarking NIZK_verify_benchmark/NIZK_verify_32768
+Benchmarking NIZK_verify_benchmark/NIZK_verify_32768: Warming up for 3.0000 s
+Benchmarking NIZK_verify_benchmark/NIZK_verify_32768: Collecting 10 samples in estimated 6.0879 s (275 iterations)
+Benchmarking NIZK_verify_benchmark/NIZK_verify_32768: Analyzing
+NIZK_verify_benchmark/NIZK_verify_32768
+                        time:   [22.122 ms 22.134 ms 22.149 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking NIZK_verify_benchmark/NIZK_verify_65536
+Benchmarking NIZK_verify_benchmark/NIZK_verify_65536: Warming up for 3.0000 s
+Benchmarking NIZK_verify_benchmark/NIZK_verify_65536: Collecting 10 samples in estimated 5.5129 s (165 iterations)
+Benchmarking NIZK_verify_benchmark/NIZK_verify_65536: Analyzing
+NIZK_verify_benchmark/NIZK_verify_65536
+                        time:   [33.370 ms 33.402 ms 33.430 ms]
+                        change: [+0.5278% +0.6540% +0.8025%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking NIZK_verify_benchmark/NIZK_verify_131072
+Benchmarking NIZK_verify_benchmark/NIZK_verify_131072: Warming up for 3.0000 s
+Benchmarking NIZK_verify_benchmark/NIZK_verify_131072: Collecting 10 samples in estimated 6.0223 s (110 iterations)
+Benchmarking NIZK_verify_benchmark/NIZK_verify_131072: Analyzing
+NIZK_verify_benchmark/NIZK_verify_131072
+                        time:   [54.426 ms 54.495 ms 54.573 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  2 (20.00%) high mild
+
+Benchmarking NIZK_verify_benchmark/NIZK_verify_262144
+Benchmarking NIZK_verify_benchmark/NIZK_verify_262144: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 5.3s or enable flat sampling.
+Benchmarking NIZK_verify_benchmark/NIZK_verify_262144: Collecting 10 samples in estimated 5.2799 s (55 iterations)
+Benchmarking NIZK_verify_benchmark/NIZK_verify_262144: Analyzing
+NIZK_verify_benchmark/NIZK_verify_262144
+                        time:   [95.689 ms 95.856 ms 96.061 ms]
+
+Benchmarking NIZK_verify_benchmark/NIZK_verify_524288
+Benchmarking NIZK_verify_benchmark/NIZK_verify_524288: Warming up for 3.0000 s
+Benchmarking NIZK_verify_benchmark/NIZK_verify_524288: Collecting 10 samples in estimated 5.7821 s (30 iterations)
+Benchmarking NIZK_verify_benchmark/NIZK_verify_524288: Analyzing
+NIZK_verify_benchmark/NIZK_verify_524288
+                        time:   [192.58 ms 192.77 ms 192.98 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking NIZK_verify_benchmark/NIZK_verify_1048576
+Benchmarking NIZK_verify_benchmark/NIZK_verify_1048576: Warming up for 3.0000 s
+Benchmarking NIZK_verify_benchmark/NIZK_verify_1048576: Collecting 10 samples in estimated 7.6734 s (20 iterations)
+Benchmarking NIZK_verify_benchmark/NIZK_verify_1048576: Analyzing
+NIZK_verify_benchmark/NIZK_verify_1048576
+                        time:   [383.50 ms 383.66 ms 383.83 ms]
+
+Benchmarking NIZK_prove_benchmark/NIZK_prove_4096
+Benchmarking NIZK_prove_benchmark/NIZK_prove_4096: Warming up for 3.0000 s
+Benchmarking NIZK_prove_benchmark/NIZK_prove_4096: Collecting 10 samples in estimated 6.1125 s (110 iterations)
+Benchmarking NIZK_prove_benchmark/NIZK_prove_4096: Analyzing
+NIZK_prove_benchmark/NIZK_prove_4096
+                        time:   [55.560 ms 55.602 ms 55.640 ms]
+                        change: [-0.1982% -0.1147% -0.0285%] (p = 0.02 < 0.05)
+                        Change within noise threshold.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking NIZK_prove_benchmark/NIZK_prove_8192
+Benchmarking NIZK_prove_benchmark/NIZK_prove_8192: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 5.0s or enable flat sampling.
+Benchmarking NIZK_prove_benchmark/NIZK_prove_8192: Collecting 10 samples in estimated 5.0315 s (55 iterations)
+Benchmarking NIZK_prove_benchmark/NIZK_prove_8192: Analyzing
+NIZK_prove_benchmark/NIZK_prove_8192
+                        time:   [91.371 ms 91.442 ms 91.496 ms]
+                        change: [-1.4336% -1.2906% -1.1453%] (p = 0.00 < 0.05)
+                        Performance has improved.
+
+Benchmarking NIZK_prove_benchmark/NIZK_prove_16384
+Benchmarking NIZK_prove_benchmark/NIZK_prove_16384: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 8.9s or enable flat sampling.
+Benchmarking NIZK_prove_benchmark/NIZK_prove_16384: Collecting 10 samples in estimated 8.9261 s (55 iterations)
+Benchmarking NIZK_prove_benchmark/NIZK_prove_16384: Analyzing
+NIZK_prove_benchmark/NIZK_prove_16384
+                        time:   [162.24 ms 162.32 ms 162.42 ms]
+                        change: [-1.2776% -1.1741% -1.0668%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
