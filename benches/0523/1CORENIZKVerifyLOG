@@ -142,38 +142,3 @@ Benchmarking NIZK_verify_benchmark/NIZK_verify_1048576: Collecting 10 samples in
 Benchmarking NIZK_verify_benchmark/NIZK_verify_1048576: Analyzing
 NIZK_verify_benchmark/NIZK_verify_1048576
                         time:   [383.50 ms 383.66 ms 383.83 ms]
-
-Benchmarking NIZK_prove_benchmark/NIZK_prove_4096
-Benchmarking NIZK_prove_benchmark/NIZK_prove_4096: Warming up for 3.0000 s
-Benchmarking NIZK_prove_benchmark/NIZK_prove_4096: Collecting 10 samples in estimated 6.1125 s (110 iterations)
-Benchmarking NIZK_prove_benchmark/NIZK_prove_4096: Analyzing
-NIZK_prove_benchmark/NIZK_prove_4096
-                        time:   [55.560 ms 55.602 ms 55.640 ms]
-                        change: [-0.1982% -0.1147% -0.0285%] (p = 0.02 < 0.05)
-                        Change within noise threshold.
-Found 1 outliers among 10 measurements (10.00%)
-  1 (10.00%) high mild
-
-Benchmarking NIZK_prove_benchmark/NIZK_prove_8192
-Benchmarking NIZK_prove_benchmark/NIZK_prove_8192: Warming up for 3.0000 s
-
-Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 5.0s or enable flat sampling.
-Benchmarking NIZK_prove_benchmark/NIZK_prove_8192: Collecting 10 samples in estimated 5.0315 s (55 iterations)
-Benchmarking NIZK_prove_benchmark/NIZK_prove_8192: Analyzing
-NIZK_prove_benchmark/NIZK_prove_8192
-                        time:   [91.371 ms 91.442 ms 91.496 ms]
-                        change: [-1.4336% -1.2906% -1.1453%] (p = 0.00 < 0.05)
-                        Performance has improved.
-
-Benchmarking NIZK_prove_benchmark/NIZK_prove_16384
-Benchmarking NIZK_prove_benchmark/NIZK_prove_16384: Warming up for 3.0000 s
-
-Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 8.9s or enable flat sampling.
-Benchmarking NIZK_prove_benchmark/NIZK_prove_16384: Collecting 10 samples in estimated 8.9261 s (55 iterations)
-Benchmarking NIZK_prove_benchmark/NIZK_prove_16384: Analyzing
-NIZK_prove_benchmark/NIZK_prove_16384
-                        time:   [162.24 ms 162.32 ms 162.42 ms]
-                        change: [-1.2776% -1.1741% -1.0668%] (p = 0.00 < 0.05)
-                        Performance has improved.
-Found 1 outliers among 10 measurements (10.00%)
-  1 (10.00%) high mild
