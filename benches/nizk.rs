@@ -44,7 +44,7 @@ fn nizk_prove_benchmark(c: &mut Criterion) {
 }
 
 fn nizk_verify_benchmark(c: &mut Criterion) {
-  for &s in [10, 12, 16].iter() {
+  for &s in [12, 13, 14, 15, 16, 17, 18, 19, 20].iter() {
     let plot_config = PlotConfiguration::default().summary_scale(AxisScale::Logarithmic);
     let mut group = c.benchmark_group("NIZK_verify_benchmark");
     group.plot_config(plot_config);
@@ -85,7 +85,7 @@ fn set_duration() -> Criterion {
 criterion_group! {
 name = benches_nizk;
 config = set_duration();
-targets = nizk_prove_benchmark, nizk_verify_benchmark
+targets =  nizk_verify_benchmark, nizk_prove_benchmark,
 }
 
 criterion_main!(benches_nizk);

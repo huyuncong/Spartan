@@ -139,8 +139,8 @@ fn verify_benchmark(c: &mut Criterion) {
 }
 
 fn poly_commit_benchmark(c: &mut Criterion) {
-  // verify_benchmark(c);
-  prove_benchmark(c);
+  verify_benchmark(c);
+  // prove_benchmark(c);
 }
 
 fn set_duration() -> Criterion {

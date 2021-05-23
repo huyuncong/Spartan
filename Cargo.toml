@@ -47,17 +47,17 @@ path = "profiler/nizk.rs"
 # name = "snark"
 # harness = false
 
-# [[bench]]
-# name = "nizk"
-# harness = false
+[[bench]]
+name = "nizk"
+harness = false
 
 # [[bench]]
 # name = "sumcheck"
 # harness = false
 
-[[bench]]
-name = "polycommit"
-harness = false
+# [[bench]]
+# name = "polycommit"
+# harness = false
 
 # [[bench]]
 # name = "crypto"
