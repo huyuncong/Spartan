@@ -1,0 +1,150 @@
+
+running 42 tests
+test dense_mlpoly::tests::check_factored_chis ... ignored
+test dense_mlpoly::tests::check_memoized_chis ... ignored
+test dense_mlpoly::tests::check_memoized_factored_chis ... ignored
+test dense_mlpoly::tests::check_polynomial_commit ... ignored
+test dense_mlpoly::tests::check_polynomial_evaluation ... ignored
+test nizk::tests::check_dotproductproof ... ignored
+test nizk::tests::check_dotproductproof_log ... ignored
+test nizk::tests::check_equalityproof ... ignored
+test nizk::tests::check_knowledgeproof ... ignored
+test nizk::tests::check_productproof ... ignored
+test r1csproof::tests::check_r1cs_proof ... ignored
+test r1csproof::tests::test_synthetic_r1cs ... ignored
+test r1csproof::tests::test_tiny_r1cs ... ignored
+test scalar::ristretto255::tests::test_addition ... ignored
+test scalar::ristretto255::tests::test_double ... ignored
+test scalar::ristretto255::tests::test_equality ... ignored
+test scalar::ristretto255::tests::test_from_bytes ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_maximum ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_negative_one ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_r2 ... ignored
+test scalar::ristretto255::tests::test_from_raw ... ignored
+test scalar::ristretto255::tests::test_from_u512_max ... ignored
+test scalar::ristretto255::tests::test_from_u512_r ... ignored
+test scalar::ristretto255::tests::test_from_u512_r2 ... ignored
+test scalar::ristretto255::tests::test_from_u512_zero ... ignored
+test scalar::ristretto255::tests::test_inv ... ignored
+test scalar::ristretto255::tests::test_inversion ... ignored
+test scalar::ristretto255::tests::test_invert_is_pow ... ignored
+test scalar::ristretto255::tests::test_multiplication ... ignored
+test scalar::ristretto255::tests::test_negation ... ignored
+test scalar::ristretto255::tests::test_squaring ... ignored
+test scalar::ristretto255::tests::test_subtraction ... ignored
+test scalar::ristretto255::tests::test_to_bytes ... ignored
+test scalar::ristretto255::tests::test_zero ... ignored
+test sparse_mlpoly::tests::check_sparse_polyeval_proof ... ignored
+test sumcheck::tests::check_sumcheck_prove_cubic ... ignored
+test tests::check_r1cs_invalid_index ... ignored
+test tests::check_r1cs_invalid_scalar ... ignored
+test tests::check_snark ... ignored
+test tests::test_padded_constraints ... ignored
+test unipoly::tests::test_from_evals_cubic ... ignored
+test unipoly::tests::test_from_evals_quad ... ignored
+
+test result: ok. 0 passed; 0 failed; 42 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+WARNING: HTML report generation will become a non-default optional feature in Criterion.rs 0.4.0.
+This feature is being moved to cargo-criterion (https://github.com/bheisler/cargo-criterion) and will be optional in a future version of Criterion.rs. To silence this warning, either switch to cargo-criterion or enable the 'html_reports' feature in your Cargo.toml.
+
+Gnuplot not found, using plotters backend
+Benchmarking poly_commit_benchmark/verify_12
+Benchmarking poly_commit_benchmark/verify_12: Warming up for 3.0000 s
+Benchmarking poly_commit_benchmark/verify_12: Collecting 10 samples in estimated 5.0020 s (3025 iterations)
+Benchmarking poly_commit_benchmark/verify_12: Analyzing
+poly_commit_benchmark/verify_12
+                        time:   [1.6532 ms 1.6542 ms 1.6551 ms]
+
+Benchmarking poly_commit_benchmark/verify_13
+Benchmarking poly_commit_benchmark/verify_13: Warming up for 3.0000 s
+Benchmarking poly_commit_benchmark/verify_13: Collecting 10 samples in estimated 5.0577 s (2420 iterations)
+Benchmarking poly_commit_benchmark/verify_13: Analyzing
+poly_commit_benchmark/verify_13
+                        time:   [2.0893 ms 2.0899 ms 2.0909 ms]
+
+Benchmarking poly_commit_benchmark/verify_14
+Benchmarking poly_commit_benchmark/verify_14: Warming up for 3.0000 s
+Benchmarking poly_commit_benchmark/verify_14: Collecting 10 samples in estimated 5.0985 s (1815 iterations)
+Benchmarking poly_commit_benchmark/verify_14: Analyzing
+poly_commit_benchmark/verify_14
+                        time:   [2.8077 ms 2.8084 ms 2.8092 ms]
+
+Benchmarking poly_commit_benchmark/verify_15
+Benchmarking poly_commit_benchmark/verify_15: Warming up for 3.0000 s
+Benchmarking poly_commit_benchmark/verify_15: Collecting 10 samples in estimated 5.1287 s (1485 iterations)
+Benchmarking poly_commit_benchmark/verify_15: Analyzing
+poly_commit_benchmark/verify_15
+                        time:   [3.4505 ms 3.4511 ms 3.4518 ms]
+
+Benchmarking poly_commit_benchmark/verify_16
+Benchmarking poly_commit_benchmark/verify_16: Warming up for 3.0000 s
+Benchmarking poly_commit_benchmark/verify_16: Collecting 10 samples in estimated 5.1367 s (1100 iterations)
+Benchmarking poly_commit_benchmark/verify_16: Analyzing
+poly_commit_benchmark/verify_16
+                        time:   [4.6674 ms 4.6682 ms 4.6697 ms]
+
+Benchmarking poly_commit_benchmark/verify_17
+Benchmarking poly_commit_benchmark/verify_17: Warming up for 3.0000 s
+Benchmarking poly_commit_benchmark/verify_17: Collecting 10 samples in estimated 5.0767 s (880 iterations)
+Benchmarking poly_commit_benchmark/verify_17: Analyzing
+poly_commit_benchmark/verify_17
+                        time:   [5.7679 ms 5.7683 ms 5.7688 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking poly_commit_benchmark/verify_18
+Benchmarking poly_commit_benchmark/verify_18: Warming up for 3.0000 s
+Benchmarking poly_commit_benchmark/verify_18: Collecting 10 samples in estimated 5.3025 s (660 iterations)
+Benchmarking poly_commit_benchmark/verify_18: Analyzing
+poly_commit_benchmark/verify_18
+                        time:   [8.0326 ms 8.0336 ms 8.0352 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking poly_commit_benchmark/verify_19
+Benchmarking poly_commit_benchmark/verify_19: Warming up for 3.0000 s
+Benchmarking poly_commit_benchmark/verify_19: Collecting 10 samples in estimated 5.5294 s (550 iterations)
+Benchmarking poly_commit_benchmark/verify_19: Analyzing
+poly_commit_benchmark/verify_19
+                        time:   [10.048 ms 10.051 ms 10.054 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+Benchmarking poly_commit_benchmark/verify_20
+Benchmarking poly_commit_benchmark/verify_20: Warming up for 3.0000 s
+Benchmarking poly_commit_benchmark/verify_20: Collecting 10 samples in estimated 5.5381 s (385 iterations)
+Benchmarking poly_commit_benchmark/verify_20: Analyzing
+poly_commit_benchmark/verify_20
+                        time:   [14.381 ms 14.383 ms 14.385 ms]
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
