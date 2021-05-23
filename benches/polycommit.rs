@@ -123,14 +123,10 @@ fn verify_benchmark(c: &mut Criterion) {
       &mut random_tape,
     );
 
-    println!("222");
-    proof_eval_vars_at_ry.verify(&gens_pc, &mut transcript, &r, &comm_vars_at_ry, &comm_vars);
-    println!("333");
-
     let name = format!("verify_{}", s);
     group.bench_function(&name, move |b| {
-      let mut transcript = Transcript::new(b"test");
       b.iter(|| {
+        let mut transcript = Transcript::new(b"test");
         proof_eval_vars_at_ry.verify(&gens_pc, &mut transcript, &r, &comm_vars_at_ry, &comm_vars)
       });
     });
