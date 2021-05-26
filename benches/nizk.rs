@@ -85,7 +85,7 @@ fn set_duration() -> Criterion {
 criterion_group! {
 name = benches_nizk;
 config = set_duration();
-targets =  nizk_verify_benchmark, nizk_prove_benchmark,
+targets =   nizk_prove_benchmark, nizk_verify_benchmark,
 }
 
 criterion_main!(benches_nizk);
