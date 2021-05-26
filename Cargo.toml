@@ -39,17 +39,17 @@ path = "src/lib.rs"
 name = "snark"
 path = "profiler/snark.rs"
 
-# [[bin]]
-# name = "nizk"
-# path = "profiler/nizk.rs"
+[[bin]]
+name = "nizk"
+path = "profiler/nizk.rs"
 
 [[bench]]
 name = "snark"
 harness = false
 
-[[bench]]
-name = "nizk"
-harness = false
+# [[bench]]
+# name = "nizk"
+# harness = false
 
 [features]
 profile = []
