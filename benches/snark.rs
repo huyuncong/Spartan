@@ -115,8 +115,8 @@ fn set_duration() -> Criterion {
 criterion_group! {
 name = benches_snark;
 config = set_duration();
-// targets = snark_encode_benchmark, snark_prove_benchmark, snark_verify_benchmark
-targets = snark_verify_benchmark, snark_encode_benchmark
+targets = snark_encode_benchmark, snark_prove_benchmark, snark_verify_benchmark
+// targets = snark_verify_benchmark, snark_encode_benchmark
 }
 
 criterion_main!(benches_snark);
