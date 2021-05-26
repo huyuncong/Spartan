@@ -1,0 +1,358 @@
+
+running 42 tests
+test dense_mlpoly::tests::check_factored_chis ... ignored
+test dense_mlpoly::tests::check_memoized_chis ... ignored
+test dense_mlpoly::tests::check_memoized_factored_chis ... ignored
+test dense_mlpoly::tests::check_polynomial_commit ... ignored
+test dense_mlpoly::tests::check_polynomial_evaluation ... ignored
+test nizk::tests::check_dotproductproof ... ignored
+test nizk::tests::check_dotproductproof_log ... ignored
+test nizk::tests::check_equalityproof ... ignored
+test nizk::tests::check_knowledgeproof ... ignored
+test nizk::tests::check_productproof ... ignored
+test r1csproof::tests::check_r1cs_proof ... ignored
+test r1csproof::tests::test_synthetic_r1cs ... ignored
+test r1csproof::tests::test_tiny_r1cs ... ignored
+test scalar::ristretto255::tests::test_addition ... ignored
+test scalar::ristretto255::tests::test_double ... ignored
+test scalar::ristretto255::tests::test_equality ... ignored
+test scalar::ristretto255::tests::test_from_bytes ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_maximum ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_negative_one ... ignored
+test scalar::ristretto255::tests::test_from_bytes_wide_r2 ... ignored
+test scalar::ristretto255::tests::test_from_raw ... ignored
+test scalar::ristretto255::tests::test_from_u512_max ... ignored
+test scalar::ristretto255::tests::test_from_u512_r ... ignored
+test scalar::ristretto255::tests::test_from_u512_r2 ... ignored
+test scalar::ristretto255::tests::test_from_u512_zero ... ignored
+test scalar::ristretto255::tests::test_inv ... ignored
+test scalar::ristretto255::tests::test_inversion ... ignored
+test scalar::ristretto255::tests::test_invert_is_pow ... ignored
+test scalar::ristretto255::tests::test_multiplication ... ignored
+test scalar::ristretto255::tests::test_negation ... ignored
+test scalar::ristretto255::tests::test_squaring ... ignored
+test scalar::ristretto255::tests::test_subtraction ... ignored
+test scalar::ristretto255::tests::test_to_bytes ... ignored
+test scalar::ristretto255::tests::test_zero ... ignored
+test sparse_mlpoly::tests::check_sparse_polyeval_proof ... ignored
+test sumcheck::tests::check_sumcheck_prove_cubic ... ignored
+test tests::check_r1cs_invalid_index ... ignored
+test tests::check_r1cs_invalid_scalar ... ignored
+test tests::check_snark ... ignored
+test tests::test_padded_constraints ... ignored
+test unipoly::tests::test_from_evals_cubic ... ignored
+test unipoly::tests::test_from_evals_quad ... ignored
+
+test result: ok. 0 passed; 0 failed; 42 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+WARNING: HTML report generation will become a non-default optional feature in Criterion.rs 0.4.0.
+This feature is being moved to cargo-criterion (https://github.com/bheisler/cargo-criterion) and will be optional in a future version of Criterion.rs. To silence this warning, either switch to cargo-criterion or enable the 'html_reports' feature in your Cargo.toml.
+
+Gnuplot not found, using plotters backend
+Benchmarking SNARK_encode_benchmark/SNARK_encode_4096
+Benchmarking SNARK_encode_benchmark/SNARK_encode_4096: Warming up for 3.0000 s
+Benchmarking SNARK_encode_benchmark/SNARK_encode_4096: Collecting 10 samples in estimated 5.9600 s (30 iterations)
+Benchmarking SNARK_encode_benchmark/SNARK_encode_4096: Analyzing
+SNARK_encode_benchmark/SNARK_encode_4096
+                        time:   [198.63 ms 198.86 ms 199.11 ms]
+                        change: [-0.7853% -0.6367% -0.4619%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+Benchmarking SNARK_encode_benchmark/SNARK_encode_8192
+Benchmarking SNARK_encode_benchmark/SNARK_encode_8192: Warming up for 3.0000 s
+Benchmarking SNARK_encode_benchmark/SNARK_encode_8192: Collecting 10 samples in estimated 6.3209 s (20 iterations)
+Benchmarking SNARK_encode_benchmark/SNARK_encode_8192: Analyzing
+SNARK_encode_benchmark/SNARK_encode_8192
+                        time:   [315.84 ms 315.94 ms 316.02 ms]
+                        change: [-2.3608% -2.3067% -2.2524%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low mild
+
+Benchmarking SNARK_encode_benchmark/SNARK_encode_16384
+Benchmarking SNARK_encode_benchmark/SNARK_encode_16384: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 6.5s.
+Benchmarking SNARK_encode_benchmark/SNARK_encode_16384: Collecting 10 samples in estimated 6.4516 s (10 iterations)
+Benchmarking SNARK_encode_benchmark/SNARK_encode_16384: Analyzing
+SNARK_encode_benchmark/SNARK_encode_16384
+                        time:   [645.93 ms 646.26 ms 646.59 ms]
+                        change: [-1.1579% -1.0784% -1.0027%] (p = 0.00 < 0.05)
+                        Performance has improved.
+
+Benchmarking SNARK_encode_benchmark/SNARK_encode_32768
+Benchmarking SNARK_encode_benchmark/SNARK_encode_32768: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 11.0s.
+Benchmarking SNARK_encode_benchmark/SNARK_encode_32768: Collecting 10 samples in estimated 10.997 s (10 iterations)
+Benchmarking SNARK_encode_benchmark/SNARK_encode_32768: Analyzing
+SNARK_encode_benchmark/SNARK_encode_32768
+                        time:   [1.1027 s 1.1035 s 1.1045 s]
+                        change: [-1.3773% -1.2963% -1.2135%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking SNARK_encode_benchmark/SNARK_encode_65536
+Benchmarking SNARK_encode_benchmark/SNARK_encode_65536: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 22.3s.
+Benchmarking SNARK_encode_benchmark/SNARK_encode_65536: Collecting 10 samples in estimated 22.335 s (10 iterations)
+Benchmarking SNARK_encode_benchmark/SNARK_encode_65536: Analyzing
+SNARK_encode_benchmark/SNARK_encode_65536
+                        time:   [2.2329 s 2.2340 s 2.2349 s]
+                        change: [-1.3170% -1.2622% -1.2143%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low severe
+
+Benchmarking SNARK_encode_benchmark/SNARK_encode_131072
+Benchmarking SNARK_encode_benchmark/SNARK_encode_131072: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 32.9s.
+Benchmarking SNARK_encode_benchmark/SNARK_encode_131072: Collecting 10 samples in estimated 32.927 s (10 iterations)
+Benchmarking SNARK_encode_benchmark/SNARK_encode_131072: Analyzing
+SNARK_encode_benchmark/SNARK_encode_131072
+                        time:   [3.2984 s 3.2996 s 3.3006 s]
+                        change: [-1.7152% -1.6782% -1.6447%] (p = 0.00 < 0.05)
+                        Performance has improved.
+
+Benchmarking SNARK_encode_benchmark/SNARK_encode_262144
+Benchmarking SNARK_encode_benchmark/SNARK_encode_262144: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 66.1s.
+Benchmarking SNARK_encode_benchmark/SNARK_encode_262144: Collecting 10 samples in estimated 66.077 s (10 iterations)
+Benchmarking SNARK_encode_benchmark/SNARK_encode_262144: Analyzing
+SNARK_encode_benchmark/SNARK_encode_262144
+                        time:   [6.6124 s 6.6141 s 6.6158 s]
+
+Benchmarking SNARK_encode_benchmark/SNARK_encode_524288
+Benchmarking SNARK_encode_benchmark/SNARK_encode_524288: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 101.8s.
+Benchmarking SNARK_encode_benchmark/SNARK_encode_524288: Collecting 10 samples in estimated 101.79 s (10 iterations)
+Benchmarking SNARK_encode_benchmark/SNARK_encode_524288: Analyzing
+SNARK_encode_benchmark/SNARK_encode_524288
+                        time:   [10.173 s 10.175 s 10.177 s]
+
+Benchmarking SNARK_encode_benchmark/SNARK_encode_1048576
+Benchmarking SNARK_encode_benchmark/SNARK_encode_1048576: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 202.9s.
+Benchmarking SNARK_encode_benchmark/SNARK_encode_1048576: Collecting 10 samples in estimated 202.94 s (10 iterations)
+Benchmarking SNARK_encode_benchmark/SNARK_encode_1048576: Analyzing
+SNARK_encode_benchmark/SNARK_encode_1048576
+                        time:   [20.300 s 20.305 s 20.310 s]
+
+Benchmarking SNARK_prove_benchmark/SNARK_prove_4096
+Benchmarking SNARK_prove_benchmark/SNARK_prove_4096: Warming up for 3.0000 s
+Benchmarking SNARK_prove_benchmark/SNARK_prove_4096: Collecting 10 samples in estimated 6.2685 s (20 iterations)
+Benchmarking SNARK_prove_benchmark/SNARK_prove_4096: Analyzing
+SNARK_prove_benchmark/SNARK_prove_4096
+                        time:   [313.22 ms 313.71 ms 314.27 ms]
+                        change: [+0.5282% +0.7861% +1.0527%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+Benchmarking SNARK_prove_benchmark/SNARK_prove_8192
+Benchmarking SNARK_prove_benchmark/SNARK_prove_8192: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 5.9s.
+Benchmarking SNARK_prove_benchmark/SNARK_prove_8192: Collecting 10 samples in estimated 5.9283 s (10 iterations)
+Benchmarking SNARK_prove_benchmark/SNARK_prove_8192: Analyzing
+SNARK_prove_benchmark/SNARK_prove_8192
+                        time:   [592.34 ms 592.89 ms 593.73 ms]
+                        change: [-0.2837% -0.1584% +0.0019%] (p = 0.06 > 0.05)
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+Benchmarking SNARK_prove_benchmark/SNARK_prove_16384
+Benchmarking SNARK_prove_benchmark/SNARK_prove_16384: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 10.2s.
+Benchmarking SNARK_prove_benchmark/SNARK_prove_16384: Collecting 10 samples in estimated 10.215 s (10 iterations)
+Benchmarking SNARK_prove_benchmark/SNARK_prove_16384: Analyzing
+SNARK_prove_benchmark/SNARK_prove_16384
+                        time:   [1.0163 s 1.0170 s 1.0177 s]
+                        change: [-1.3834% -0.9110% -0.3778%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low mild
+  1 (10.00%) high mild
+
+Benchmarking SNARK_prove_benchmark/SNARK_prove_32768
+Benchmarking SNARK_prove_benchmark/SNARK_prove_32768: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 19.6s.
+Benchmarking SNARK_prove_benchmark/SNARK_prove_32768: Collecting 10 samples in estimated 19.634 s (10 iterations)
+Benchmarking SNARK_prove_benchmark/SNARK_prove_32768: Analyzing
+SNARK_prove_benchmark/SNARK_prove_32768
+                        time:   [1.9495 s 1.9510 s 1.9526 s]
+                        change: [-1.7287% -1.2577% -0.6411%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+Benchmarking SNARK_prove_benchmark/SNARK_prove_65536
+Benchmarking SNARK_prove_benchmark/SNARK_prove_65536: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 35.7s.
+Benchmarking SNARK_prove_benchmark/SNARK_prove_65536: Collecting 10 samples in estimated 35.715 s (10 iterations)
+Benchmarking SNARK_prove_benchmark/SNARK_prove_65536: Analyzing
+SNARK_prove_benchmark/SNARK_prove_65536
+                        time:   [3.5113 s 3.5124 s 3.5135 s]
+                        change: [-0.4696% -0.4152% -0.3622%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+Benchmarking SNARK_prove_benchmark/SNARK_prove_131072
+Benchmarking SNARK_prove_benchmark/SNARK_prove_131072: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 70.0s.
+Benchmarking SNARK_prove_benchmark/SNARK_prove_131072: Collecting 10 samples in estimated 69.963 s (10 iterations)
+Benchmarking SNARK_prove_benchmark/SNARK_prove_131072: Analyzing
+SNARK_prove_benchmark/SNARK_prove_131072
+                        time:   [6.8605 s 6.8660 s 6.8711 s]
+                        change: [-0.5331% -0.4050% -0.2889%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+Benchmarking SNARK_prove_benchmark/SNARK_prove_262144
+Benchmarking SNARK_prove_benchmark/SNARK_prove_262144: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 130.0s.
+Benchmarking SNARK_prove_benchmark/SNARK_prove_262144: Collecting 10 samples in estimated 129.97 s (10 iterations)
+Benchmarking SNARK_prove_benchmark/SNARK_prove_262144: Analyzing
+SNARK_prove_benchmark/SNARK_prove_262144
+                        time:   [12.755 s 12.786 s 12.842 s]
+                        change: [-0.0269% +0.2497% +0.7360%] (p = 0.29 > 0.05)
+                        No change in performance detected.
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low mild
+  1 (10.00%) high severe
+
+Benchmarking SNARK_prove_benchmark/SNARK_prove_524288
+Benchmarking SNARK_prove_benchmark/SNARK_prove_524288: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 257.1s.
+Benchmarking SNARK_prove_benchmark/SNARK_prove_524288: Collecting 10 samples in estimated 257.09 s (10 iterations)
+Benchmarking SNARK_prove_benchmark/SNARK_prove_524288: Analyzing
+SNARK_prove_benchmark/SNARK_prove_524288
+                        time:   [25.263 s 25.630 s 26.213 s]
+                        change: [-0.0927% +1.3548% +3.5918%] (p = 0.24 > 0.05)
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+Benchmarking SNARK_prove_benchmark/SNARK_prove_1048576
+Benchmarking SNARK_prove_benchmark/SNARK_prove_1048576: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 495.5s.
+Benchmarking SNARK_prove_benchmark/SNARK_prove_1048576: Collecting 10 samples in estimated 495.52 s (10 iterations)
+Benchmarking SNARK_prove_benchmark/SNARK_prove_1048576: Analyzing
+SNARK_prove_benchmark/SNARK_prove_1048576
+                        time:   [48.577 s 48.821 s 49.067 s]
+                        change: [-1.9843% -1.4377% -0.8872%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+Benchmarking SNARK_verify_benchmark/SNARK_verify_4096
+Benchmarking SNARK_verify_benchmark/SNARK_verify_4096: Warming up for 3.0000 s
+Benchmarking SNARK_verify_benchmark/SNARK_verify_4096: Collecting 10 samples in estimated 5.6542 s (275 iterations)
+Benchmarking SNARK_verify_benchmark/SNARK_verify_4096: Analyzing
+SNARK_verify_benchmark/SNARK_verify_4096
+                        time:   [20.561 ms 20.568 ms 20.574 ms]
+                        change: [-0.3992% -0.3551% -0.3103%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+Benchmarking SNARK_verify_benchmark/SNARK_verify_8192
+Benchmarking SNARK_verify_benchmark/SNARK_verify_8192: Warming up for 3.0000 s
+Benchmarking SNARK_verify_benchmark/SNARK_verify_8192: Collecting 10 samples in estimated 5.4201 s (220 iterations)
+Benchmarking SNARK_verify_benchmark/SNARK_verify_8192: Analyzing
+SNARK_verify_benchmark/SNARK_verify_8192
+                        time:   [24.625 ms 24.636 ms 24.649 ms]
+
+Benchmarking SNARK_verify_benchmark/SNARK_verify_16384
+Benchmarking SNARK_verify_benchmark/SNARK_verify_16384: Warming up for 3.0000 s
+Benchmarking SNARK_verify_benchmark/SNARK_verify_16384: Collecting 10 samples in estimated 5.0373 s (165 iterations)
+Benchmarking SNARK_verify_benchmark/SNARK_verify_16384: Analyzing
+SNARK_verify_benchmark/SNARK_verify_16384
+                        time:   [30.503 ms 30.511 ms 30.519 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low mild
+
+Benchmarking SNARK_verify_benchmark/SNARK_verify_32768
+Benchmarking SNARK_verify_benchmark/SNARK_verify_32768: Warming up for 3.0000 s
+Benchmarking SNARK_verify_benchmark/SNARK_verify_32768: Collecting 10 samples in estimated 6.1438 s (165 iterations)
+Benchmarking SNARK_verify_benchmark/SNARK_verify_32768: Analyzing
+SNARK_verify_benchmark/SNARK_verify_32768
+                        time:   [37.251 ms 37.264 ms 37.280 ms]
+
+Benchmarking SNARK_verify_benchmark/SNARK_verify_65536
+Benchmarking SNARK_verify_benchmark/SNARK_verify_65536: Warming up for 3.0000 s
+Benchmarking SNARK_verify_benchmark/SNARK_verify_65536: Collecting 10 samples in estimated 5.2427 s (110 iterations)
+Benchmarking SNARK_verify_benchmark/SNARK_verify_65536: Analyzing
+SNARK_verify_benchmark/SNARK_verify_65536
+                        time:   [47.640 ms 47.653 ms 47.667 ms]
+                        change: [-0.2966% -0.2566% -0.2146%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+Benchmarking SNARK_verify_benchmark/SNARK_verify_131072
+Benchmarking SNARK_verify_benchmark/SNARK_verify_131072: Warming up for 3.0000 s
+Benchmarking SNARK_verify_benchmark/SNARK_verify_131072: Collecting 10 samples in estimated 6.5412 s (110 iterations)
+Benchmarking SNARK_verify_benchmark/SNARK_verify_131072: Analyzing
+SNARK_verify_benchmark/SNARK_verify_131072
+                        time:   [59.448 ms 59.467 ms 59.494 ms]
+
+Benchmarking SNARK_verify_benchmark/SNARK_verify_262144
+Benchmarking SNARK_verify_benchmark/SNARK_verify_262144: Warming up for 3.0000 s
+Benchmarking SNARK_verify_benchmark/SNARK_verify_262144: Collecting 10 samples in estimated 8.6596 s (110 iterations)
+Benchmarking SNARK_verify_benchmark/SNARK_verify_262144: Analyzing
+SNARK_verify_benchmark/SNARK_verify_262144
+                        time:   [78.693 ms 78.706 ms 78.727 ms]
+
+Benchmarking SNARK_verify_benchmark/SNARK_verify_524288
+Benchmarking SNARK_verify_benchmark/SNARK_verify_524288: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 5.5s or enable flat sampling.
+Benchmarking SNARK_verify_benchmark/SNARK_verify_524288: Collecting 10 samples in estimated 5.5473 s (55 iterations)
+Benchmarking SNARK_verify_benchmark/SNARK_verify_524288: Analyzing
+SNARK_verify_benchmark/SNARK_verify_524288
+                        time:   [100.80 ms 100.85 ms 100.89 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking SNARK_verify_benchmark/SNARK_verify_1048576
+Benchmarking SNARK_verify_benchmark/SNARK_verify_1048576: Warming up for 3.0000 s
+
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 7.6s or enable flat sampling.
+Benchmarking SNARK_verify_benchmark/SNARK_verify_1048576: Collecting 10 samples in estimated 7.5943 s (55 iterations)
+Benchmarking SNARK_verify_benchmark/SNARK_verify_1048576: Analyzing
+SNARK_verify_benchmark/SNARK_verify_1048576
+                        time:   [138.02 ms 138.05 ms 138.09 ms]
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
