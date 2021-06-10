@@ -43,13 +43,13 @@ path = "profiler/snark.rs"
 name = "nizk"
 path = "profiler/nizk.rs"
 
-[[bench]]
-name = "snark"
-harness = false
-
 # [[bench]]
-# name = "nizk"
+# name = "snark"
 # harness = false
+
+[[bench]]
+name = "nizk"
+harness = false
 
 [features]
 profile = []
