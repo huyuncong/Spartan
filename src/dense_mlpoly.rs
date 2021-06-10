@@ -187,6 +187,7 @@ impl DensePolynomial {
     let L_size = blinds.len();
     let R_size = self.Z.len() / L_size;
     assert_eq!(L_size * R_size, self.Z.len());
+    // println!("{} {} {}", self.Z.len(), L_size, R_size);
     let C = (0..L_size)
       .map(|i| {
         self.Z[R_size * i..R_size * (i + 1)]
