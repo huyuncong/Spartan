@@ -49,22 +49,22 @@ fn prove_benchmark(c: &mut Criterion) {
 
     let mut csprng: OsRng = OsRng;
     let num_size = 1 << s;
-    let num_rounds = s;
-    let mut A = Vec::with_capacity(num_size);
+    let mut a = Vec::with_capacity(num_size);
     for _ in 0..num_size {
-      let tmpA = Scalar::random(&mut csprng);
-      A.push(tmpA);
+      let tmp = Scalar::random(&mut csprng);
+      a.push(tmp);
     }
 
     let mut r = Vec::new();
     for _ in 0..s {
-      let tmpA = Scalar::random(&mut csprng);
-      r.push(tmpA);
+      let tmp = Scalar::random(&mut csprng);
+      r.push(tmp);
     }
 
     let gens_pc = PolyCommitmentGens::new(s, b"gens_r1cs_sat");
 
-    let mut poly_A = DensePolynomial::new(A);
+    let poly_a = DensePolynomial::new(a);
+    println!("{} {} {}", poly_a.get_num_vars(), poly_a.len(), s);
 
     let mut transcript = Transcript::new(b"test");
 
@@ -73,7 +73,7 @@ fn prove_benchmark(c: &mut Criterion) {
     let name = format!("prove_{}", s);
     group.bench_function(&name, move |b| {
       b.iter(|| {
-        poly_commit_helper(&poly_A, &gens_pc, &mut random_tape, &r, &mut transcript);
+        poly_commit_helper(&poly_a, &gens_pc, &mut random_tape, &r, &mut transcript);
       });
     });
     group.finish();
@@ -135,8 +135,8 @@ fn verify_benchmark(c: &mut Criterion) {
 }
 
 fn poly_commit_benchmark(c: &mut Criterion) {
-  verify_benchmark(c);
-  // prove_benchmark(c);
+  // verify_benchmark(c);
+  prove_benchmark(c);
 }
 
 fn set_duration() -> Criterion {
