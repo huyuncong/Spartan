@@ -141,10 +141,10 @@ fn group_multi_mul_bench(
 }
 
 fn crypto_benchmark(c: &mut Criterion) {
-  field_add_bench(c, 1000);
-  field_mul_bench(c, 1000);
-  group_add_bench(c, 1000);
-  group_mul_bench(c, 1000);
+  // field_add_bench(c, 1000);
+  // field_mul_bench(c, 1000);
+  // group_add_bench(c, 1000);
+  // group_mul_bench(c, 1000);
   group_multi_mul_bench(c);
 }
 
